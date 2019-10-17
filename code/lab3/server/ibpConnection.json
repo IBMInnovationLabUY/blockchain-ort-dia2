@@ -1,0 +1,47 @@
+{
+    "name": "mychannel",
+    "description": "Network on IBP v2",
+    "version": "1.0.0",
+    "client": {
+        "organization": "votermspid"
+    },
+    "organizations": {
+        "votermspid": {
+            "mspid": "votermspid",
+            "peers": [
+                "na6b34e-voterpeer.svergara-blockchain-k8s.us-south.containers.appdomain.cloud:7051"
+            ],
+            "certificateAuthorities": [
+                "na6b34e-voterca.svergara-blockchain-k8s.us-south.containers.appdomain.cloud:7054"
+            ]
+        }
+    },
+    "orderers": {
+        "na6b34e-orderer1.svergara-blockchain-k8s.us-south.containers.appdomain.cloud:7050": {
+            "url": "grpcs://na6b34e-orderer1.svergara-blockchain-k8s.us-south.containers.appdomain.cloud:7050",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICIjCCAcigAwIBAgIUJQXDXt49iCN6m7o1i3ejnct8WuMwCgYIKoZIzj0EAwIw\nZTELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRYwFAYDVQQDEw1PcmRlcmVy\nQ0EtdGxzMB4XDTE5MTAxNzE4MDEwMFoXDTM0MTAxMzE4MDEwMFowZTELMAkGA1UE\nBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQKEwtIeXBlcmxl\nZGdlcjEPMA0GA1UECxMGRmFicmljMRYwFAYDVQQDEw1PcmRlcmVyQ0EtdGxzMFkw\nEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIY6YFQqpUEFFzXXVOlMahYcfVgMTPSDa\nTLlsr7MxZZFKTr3hQilmUG2MAssqrJtHMTrxuSUjjo3byf38XG8P9KNWMFQwDgYD\nVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYBAf8CAQEwHQYDVR0OBBYEFCC/7rCF\ny3JFCdoQairOQwwZCQ89MA8GA1UdEQQIMAaHBArQRUgwCgYIKoZIzj0EAwIDSAAw\nRQIhAIzzcLkJRxpIbiw0pn8f8uRWkiFzhUjB2AjBWU8EXutBAiBBY+VCfL7yGGEn\nhsRpNGh9JYNcjZmvyaoJtsysRwKeRA==\n-----END CERTIFICATE-----\n"
+            }
+        }
+    },
+    "peers": {
+        "na6b34e-voterpeer.svergara-blockchain-k8s.us-south.containers.appdomain.cloud:7051": {
+            "url": "grpcs://na6b34e-voterpeer.svergara-blockchain-k8s.us-south.containers.appdomain.cloud:7051",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\nMIICHTCCAcSgAwIBAgIUCfEYthMaNBiiEmiOiT6S1WEsPRMwCgYIKoZIzj0EAwIw\nYzELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRQwEgYDVQQK\nEwtIeXBlcmxlZGdlcjEPMA0GA1UECxMGRmFicmljMRQwEgYDVQQDEwtWb3RlckNB\nLXRsczAeFw0xOTEwMTcxNzM0MDBaFw0zNDEwMTMxNzM0MDBaMGMxCzAJBgNVBAYT\nAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEUMBIGA1UEChMLSHlwZXJsZWRn\nZXIxDzANBgNVBAsTBkZhYnJpYzEUMBIGA1UEAxMLVm90ZXJDQS10bHMwWTATBgcq\nhkjOPQIBBggqhkjOPQMBBwNCAASPGTCJPXwvIvzpicjeKX79ERCceEQ8WBGbgVrS\nL3cAGwk4w+j9BkI8ypplLm0F2s4436npGakJRNF7kt7PyN5Go1YwVDAOBgNVHQ8B\nAf8EBAMCAQYwEgYDVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQUridJpaVBkul1\nfLnsWEgFpmt/BD4wDwYDVR0RBAgwBocECtBFSDAKBggqhkjOPQQDAgNHADBEAiAE\neXf9JsCjJ1CQKTeayYAD6F/x81JnKJjyT3WTGUAzngIgMxS6PLTxdwI1i7Z9hshc\nyLpn+Pz3Qo77niZCZvPw/pA=\n-----END CERTIFICATE-----\n"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "na6b34e-voterpeer.svergara-blockchain-k8s.us-south.containers.appdomain.cloud"
+            }
+        }
+    },
+    "certificateAuthorities": {
+        "na6b34e-voterca.svergara-blockchain-k8s.us-south.containers.appdomain.cloud:7054": {
+            "url": "https://na6b34e-voterca.svergara-blockchain-k8s.us-south.containers.appdomain.cloud:7054",
+            "caName": "ca",
+            "tlsCACerts": {
+                "pem": "-----BEGIN CERTIFICATE-----\r\nMIIDPDCCAqWgAwIBAgIJbbJmeC+ph/zEMA0GCSqGSIb3DQEBBQUAMIGxMVQwUgYD\r\nVQQDE0tuYTZiMzRlLXZvdGVyY2Euc3ZlcmdhcmEtYmxvY2tjaGFpbi1rOHMudXMt\r\nc291dGguY29udGFpbmVycy5hcHBkb21haW4uY2xvdWQxCzAJBgNVBAYTAlVTMRcw\r\nFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEQMA4GA1UEBxMHUmFsZWlnaDEMMAoGA1UE\r\nChMDSUJNMRMwEQYDVQQLEwpCbG9ja2NoYWluMB4XDTE5MTAxNzE3MzU1NloXDTIw\r\nMTAxNjE3MzU1NlowgbExVDBSBgNVBAMTS25hNmIzNGUtdm90ZXJjYS5zdmVyZ2Fy\r\nYS1ibG9ja2NoYWluLWs4cy51cy1zb3V0aC5jb250YWluZXJzLmFwcGRvbWFpbi5j\r\nbG91ZDELMAkGA1UEBhMCVVMxFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRAwDgYD\r\nVQQHEwdSYWxlaWdoMQwwCgYDVQQKEwNJQk0xEzARBgNVBAsTCkJsb2NrY2hhaW4w\r\ngZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAJ5l5das2eqOZH1BmhpyAKDZ7hpF\r\ntUtg3KxqpTB7gpKPSoWCsnCcJnhfbF4pdjoEZngio3J2QgkXRrJgBcYt7Y71g506\r\nm/v0DW9xk673EtSMYxnNvV2n8GPwFrojpra3rQhAcXeGO+g0LXjss3BYyrJCHU92\r\nBcP9jfiVWXzkQ8CvAgMBAAGjWjBYMFYGA1UdEQRPME2CS25hNmIzNGUtdm90ZXJj\r\nYS5zdmVyZ2FyYS1ibG9ja2NoYWluLWs4cy51cy1zb3V0aC5jb250YWluZXJzLmFw\r\ncGRvbWFpbi5jbG91ZDANBgkqhkiG9w0BAQUFAAOBgQBd88kmttz7QZMP1YipB4Uc\r\nD9vxU5g1JGol8VmaTzLmSTeh6xRS5VTsWJoVkjB6hQYFJhGLbF9js8drJJ7bg3eu\r\nxAI+glzJv6VjDeRVinEFPVJn6M/+X3fKZafNiTTDk3zoU3YGunJ8kTmjW5+xgRfq\r\nmISKV1y/pqXMikY3DBJaGQ==\r\n-----END CERTIFICATE-----\r\n"
+            }
+        }
+    }
+}
